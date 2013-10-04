@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Qualitas</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_guardar">Guardar</string>
+    <string name="menu_nuevo">Nuevo</string>
+    <string name="tab_1">Tab 1</string>
+    <string name="tab_2">Tab 2</string>
+
+    <!-- HEADERS STRINGS -->
+
+    <color name="division">#efefef</color>
+
+    <!-- FOOTER STRINGS -->
+    <string name="f_primaNeta">Prima neta</string>
+    <string name="f_recPagoFrac">Recargo de pago fraccionado</string>
+    <string name="f_derPol">Derecho de póliza</string>
+    <string name="f_subtotal">Subtotal</string>
+    <string name="f_iva">IVA</string>
+    <string name="f_total">Total</string>
+    <string name="header_marca">Marca</string>
+    <string name="header_version">Versión</string>
+    <string name="header_tipo">Tipo</string>
+    <string name="header_ano">Año</string>
+    <string name="header_noAmis">No. AMIS</string>
+    <string name="header_clave">Clave: </string>
+    <string name="header_cobertura">Cobertura</string>
+    <string name="header_pago">Pago</string>
+    <string name="header_periodo">Periodo</string>
+    <string name="header_cp">CP</string>
+    <string name="header_ciudad">Ciudad</string>
+    <string name="cobertura_danos">Daños materiales</string>
+    <string name="cobertura_robo">Robo Total</string>
+    <string name="cobertura_resp_civil">Responsabilidad Civil</string>
+    <string name="cobertura_resp_civil_ext">Responsabilidad Civil en el Extranjero</string>
+    <string name="cobertura_rc_complementaria">RC Complementaria Personas</string>
+    <string name="cobertura_rc_ocupantes">RC Ocupantes</string>
+    <string name="cobertura_gastos_medicos">Gastos Médicos Ocupantes</string>
+    <string name="cobertura_muerte_conductor">Muerte al conductor</string>
+    <string name="cobertura_gastos_legales">Gastos Legales</string>
+    <string name="cobertura_asistencia_vial">Asistencia Vial</string>
+    <string name="cobertura_extension_cobertura">Extensión de Cobertura</string>
+    <string name="cobertura_gastos_transporte">Gastos de Transporte</string>
+    <string name="cobertura_robo_parcial">Robo Parcial</string>
+    <string name="cobertura_danos_materiales_rines">Daños Materiales para Neumáticos y Rines</string>
+    <string name="cobertura_equipo_especial">Equipo Especial</string>
+    <string name="titulo_suma_asegurada">Suma Asegurada</string>
+    <string name="suma_asegurada_amparado">Amparado</string>
+    <string name="titulo_deducible">Deducibles</string>
+    <string name="deducible_sin_deducible">Sin Deducible</string>
+    <string name="titulo_primas">Primas</string>
+
+    <color name="blanco">#FFFFFF</color>
+    <color name="fondo_tabla1">#D6D6D6</color>
+    <color name="fondo_tabla2">#EEEEEE</color>
+    <!-- COLORES -->
+
+    <color name="grisFoot">#CFCFCF</color>
+    <color name="morado">#6d2179</color>
+    <color name="spinner1">#FF0000</color>
+    <color name="btn_fondo">#00A19B</color>
+    <color name="btn_fondo_press">#2BC9C3</color>
+
+    <!-- Push Notification -->
+    <string name="error_config">Please set the %1$s constant and recompile the app.</string>
+    <string name="already_registered">Device is already registered on server.</string>
+    <string name="gcm_registered">From GCM: device successfully registered!</string>
+    <string name="gcm_unregistered">From GCM: device successfully unregistered!</string>
+    <string name="gcm_message">From GCM: you got message!</string>
+    <string name="gcm_error">From GCM: error (%1$s).</string>
+    <string name="gcm_recoverable_error">From GCM: recoverable error (%1$s).</string>
+    <string name="gcm_deleted">From GCM: server deleted %1$d pending messages!</string>
+    <string name="server_registering">Trying (attempt %1$d/%2$d) to register device on Demo Server.</string>
+    <string name="server_registered">From Demo Server: successfully added device!</string>
+    <string name="server_unregistered">From Demo Server: successfully removed device!</string>
+    <string name="server_register_error">Could not register device on Demo Server after %1$d attempts.</string>
+    <string name="server_unregister_error">Could not unregister device on Demo Server (%1$s).</string>
+    <string name="options_register">Register</string>
+    <string name="options_unregister">Unregister</string>
+    <string name="options_clear">Clear</string>
+    <string name="options_exit">Exit</string>
+    <string name="title_activity_register">Register</string>
+    <!-- Push Notification -->
+
+    <string name="title_activity_solicitud">SolicitudActivity</string>
+    <string name="action_settings">Settings</string>
+
+</resources>

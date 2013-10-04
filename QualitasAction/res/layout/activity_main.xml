@@ -1,0 +1,1662 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/abajo"
+        android:layout_marginTop="@dimen/abajo"
+        android:src="@drawable/qualitas_header" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/abajoTabla"
+        android:layout_weight="33" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#D6D6D6"
+            android:padding="5dp" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@color/blanco"
+                android:paddingLeft="@dimen/paddingheader"
+                android:paddingRight="@dimen/paddingheader" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/header_marca" />
+
+                <Spinner
+                    android:id="@+id/spMarca"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                     />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@color/blanco"
+                android:paddingLeft="@dimen/paddingheader"
+                android:paddingRight="@dimen/paddingheader" >
+                 >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/header_version" />
+
+                <Spinner
+                    android:id="@+id/spVersion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@color/blanco"
+                android:paddingLeft="@dimen/paddingheader"
+                android:paddingRight="@dimen/paddingheader" > 
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/header_tipo" />
+
+                <Spinner
+                    android:id="@+id/spTipo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@color/blanco"
+                android:paddingLeft="@dimen/paddingheader"
+                android:paddingRight="@dimen/paddingheader" > 
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/header_ano" />
+
+                <Spinner
+                    android:id="@+id/spAno"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnSolicitar"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/solicitar_btn"
+                android:onClick="SolicitarCotizacion"
+                android:text="Solicitar"
+                android:textColor="@android:color/white" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/fondo_tabla2"
+            android:padding="5dip" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@color/blanco"
+                android:paddingLeft="@dimen/paddingheader"
+                android:paddingRight="13dp" >
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/header_noAmis" />
+
+                <EditText
+                    android:id="@+id/etApPaterno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.68"
+                    android:inputType="number" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@color/blanco" 
+                android:paddingLeft="@dimen/paddingheader"
+                android:paddingRight="@dimen/paddingheader" >
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/header_clave" />
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="2.57"
+                    android:text="0"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@color/blanco"
+                android:paddingLeft="@dimen/paddingheader"
+                android:paddingRight="@dimen/paddingheader" >
+                
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/header_cobertura" />
+
+                <Spinner
+                    android:id="@+id/spinner5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                     />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@color/blanco"
+                android:paddingLeft="@dimen/paddingheader"
+                android:paddingRight="@dimen/paddingheader" 
+                 >
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/header_pago" />
+
+                <Spinner
+                    android:id="@+id/spinner6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@color/blanco"
+                android:paddingLeft="@dimen/paddingheader"
+                android:paddingRight="@dimen/paddingheader" 
+                 >
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/header_periodo" />
+
+                <Spinner
+                    android:id="@+id/spinner7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/fondo_tabla1"
+            android:padding="5dip" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="20"
+                android:background="@color/blanco"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="@dimen/paddingheader"
+                android:paddingRight="@dimen/paddingheader"  >
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/header_cp" />
+
+                <EditText
+                    android:id="@+id/etColonia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="number"
+                    
+                     />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnBuscar"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="20"
+                android:background="@drawable/solicitar_btn"
+                android:text="Buscar"
+                android:onClick="buscaCP"
+                android:textColor="@color/blanco" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="60"
+                android:gravity="center_vertical"
+                android:background="@color/blanco"
+                android:paddingLeft="@dimen/paddingheader"
+                android:paddingRight="@dimen/paddingheader"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"/>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/fondo_tabla2"
+            android:padding="5dip" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/blanco"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="@dimen/paddingheader"
+                android:paddingRight="@dimen/paddingheader" >
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="País" />
+
+                <Spinner
+                    android:id="@+id/spinner8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/blanco"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="@dimen/paddingheader"
+                android:paddingRight="@dimen/paddingheader"  >
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Estado" />
+
+                <Spinner
+                    android:id="@+id/spinner9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/blanco"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="@dimen/paddingheader"
+                android:paddingRight="@dimen/paddingheader"  >
+
+                  
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Ciudad" />
+                    
+                <Spinner
+                    android:id="@+id/spinner10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:prompt="@string/app_name" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/blanco" 
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="@dimen/paddingheader"
+                android:paddingRight="@dimen/paddingheader" 
+                >
+ 
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="CP" />
+
+                <Spinner
+                    android:id="@+id/spinner11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    
+                     />
+            </LinearLayout>
+
+            
+        </TableRow>
+    </TableLayout>
+ 
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="50"
+        android:background="#D7D7D7" >
+
+        <TableLayout
+            android:id="@+id/TableLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+               
+            
+            
+            <TableRow
+                android:id="@+id/tableRow13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="1dp"
+                android:background="@drawable/deg_gris"
+                 >
+                
+                <TextView
+                    android:id="@+id/tvTitCobertura"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_weight="2"
+                    android:text="@string/header_cobertura" />
+                <TextView
+                android:layout_width="2dp"
+                android:layout_height="35dp"
+                android:background="@drawable/rectangulito"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/tvTitulo2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:text="@string/titulo_suma_asegurada" />
+                <TextView
+                android:layout_width="2dp"
+                android:layout_height="35dp"
+                android:background="@drawable/rectangulito"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/tvTitulo3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:text="@string/titulo_deducible" />
+                <TextView
+                android:layout_width="2dp"
+                android:layout_height="35dp"
+                android:background="@drawable/rectangulito"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/tvTitulo4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:text="@string/titulo_primas" />
+
+            </TableRow>
+				
+            		<TextView
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:background="@drawable/rectangulito"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp" />
+            
+            			
+            <TableRow
+                android:id="@+id/tableRow9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#FBFBFB" >
+
+                <TextView
+                    android:id="@+id/textView30"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/paddinDerecho"
+                    android:layout_marginLeft="@dimen/paddingGeneral"
+                    android:layout_marginRight="@dimen/paddinDerecho"
+                    android:layout_weight="2"
+                    android:text="@string/cobertura_danos" />
+
+                <TextView
+                android:layout_width="2dp"
+                android:layout_height="35dp"
+                android:background="@drawable/rectangulito"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/tvSumDatosMat"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginRight="@dimen/paddinDerecho"
+                    android:layout_weight="1"
+                    android:text="80000" />
+
+                <TextView
+                android:layout_width="2dp"
+                android:layout_height="35dp"
+                android:background="@drawable/rectangulito"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <Spinner
+                    android:id="@+id/spDedDanosMat"
+                    android:layout_width="0dp"
+                    android:layout_marginLeft="1dp"                    
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                android:layout_width="2dp"
+                android:layout_height="35dp"
+                android:background="@drawable/rectangulito"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/tvPrimDanosMat"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/paddingGeneral"
+                    android:layout_marginRight="@dimen/paddinDerecho"
+                    android:layout_weight="1"
+                    android:text="0.0" />
+                
+            </TableRow>
+
+            
+
+            <TableRow
+                android:id="@+id/tableRow10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#EFEFEF" >
+
+                <TextView
+                    android:id="@+id/textView33"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/paddingGeneral"
+                    android:layout_marginRight="@dimen/paddinDerecho"
+                    android:layout_weight="2"
+                    android:text="@string/cobertura_robo" />
+
+                <TextView
+                android:layout_width="2dp"
+                android:layout_height="35dp"
+                android:background="@drawable/rectangulito"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/tvSumRoboTotal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="9dp"                    
+                    android:layout_marginRight="@dimen/paddinDerecho"
+                    android:layout_weight="1"
+                    android:text="80000" />
+
+                <TextView
+                android:layout_width="2dp"
+                android:layout_height="35dp"
+                android:background="@drawable/rectangulito"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <Spinner
+                    android:id="@+id/spDedRoboTot"
+                    android:layout_width="0dp"
+                    android:layout_marginLeft="1dp"                    
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                android:layout_width="2dp"
+                android:layout_height="35dp"
+                android:background="@drawable/rectangulito"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/tvPrimRobo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/paddingGeneral"
+                    android:layout_marginRight="@dimen/paddinDerecho"
+                    android:layout_weight="1"
+                    android:text="0.0" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/paddingGeneral"
+                android:layout_marginRight="10dp"
+                android:background="#FBFBFB" >
+
+                <TextView
+                    android:id="@+id/textView37"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/paddingGeneral"
+                    android:layout_marginRight="@dimen/paddinDerecho"
+                    android:layout_weight="2"
+                    android:text="@string/cobertura_resp_civil" />
+
+                <TextView
+                android:layout_width="2dp"
+                android:layout_height="35dp"
+                android:background="@drawable/rectangulito"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <Spinner
+                    android:id="@+id/spSumRespCivil"
+                    android:layout_width="0dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                android:layout_width="2dp"
+                android:layout_height="35dp"
+                android:background="@drawable/rectangulito"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/tvDedRespCivil"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/paddingGeneral"
+                    android:layout_marginRight="@dimen/paddinDerecho"
+                    android:layout_weight="1"
+                    android:text="@string/deducible_sin_deducible" />
+
+                <TextView
+                android:layout_width="2dp"
+                android:layout_height="35dp"
+                android:background="@drawable/rectangulito"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/tvPrimRespCivil"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/paddingGeneral"
+                    android:layout_marginRight="@dimen/paddinDerecho"
+                    android:layout_weight="1"
+                    android:text="0.0" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#EFEFEF" >
+
+                <TextView
+                    android:id="@+id/textView39"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="@dimen/paddinDerecho"
+                    android:layout_weight="2"
+                    android:text="@string/cobertura_resp_civil_ext" />
+
+                <TextView
+                android:layout_width="2dp"
+                android:layout_height="35dp"
+                android:background="@drawable/rectangulito"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/tvSumRespCivilExt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="@dimen/paddinDerecho"
+                    android:layout_weight="1"
+                    android:text="@string/suma_asegurada_amparado" />
+
+                <TextView
+                android:layout_width="2dp"
+                android:layout_height="35dp"
+                android:background="@drawable/rectangulito"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/tvDedRespCivilExt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/paddingGeneral"
+                    android:layout_marginRight="@dimen/paddinDerecho"
+                    android:layout_weight="1"
+                    android:text="@string/deducible_sin_deducible" />
+
+                <TextView
+                android:layout_width="2dp"
+                android:layout_height="35dp"
+                android:background="@drawable/rectangulito"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/textView42"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/paddingGeneral"
+                    android:layout_marginRight="@dimen/paddinDerecho"
+                    android:layout_weight="1"
+                    android:text="0.0" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#FBFBFB" >
+
+                <CheckBox
+                    android:id="@+id/checkBox1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="@string/cobertura_rc_complementaria"
+                    android:textSize="14dp" />
+
+                <TextView
+                android:layout_width="2dp"
+                android:layout_height="35dp"
+                android:background="@drawable/rectangulito"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <Spinner
+                    android:id="@+id/spCompPersona"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:visibility="invisible" />
+
+                <TextView
+                android:layout_width="2dp"
+                android:layout_height="35dp"
+                android:background="@drawable/rectangulito"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/tvDedCompPersona"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/paddingGeneral"
+                    android:layout_marginRight="@dimen/paddinDerecho"
+                    android:layout_weight="1"
+                    android:text="@string/deducible_sin_deducible"
+                    android:visibility="invisible" />
+
+                <TextView
+                android:layout_width="2dp"
+                android:layout_height="35dp"
+                android:background="@drawable/rectangulito"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/tvPrimCompPersonas"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/paddingGeneral"
+                    android:layout_marginRight="@dimen/paddinDerecho"
+                    android:layout_weight="1"
+                    android:text="0.0"
+                    android:visibility="invisible" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#EFEFEF" >
+
+                <CheckBox
+                    android:id="@+id/checkBox12"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="2"
+                    android:text="@string/cobertura_rc_ocupantes" 
+	                android:textSize="14dp"    
+                    />
+                
+                
+                
+                
+
+                <TextView
+                android:layout_width="2dp"
+                android:layout_height="35dp"
+                android:background="@drawable/rectangulito"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/tvSumOcupantes"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/paddingGeneral"
+                    android:layout_marginRight="@dimen/paddinDerecho"
+                    android:layout_weight="1"
+                    android:text="250000"
+                    android:visibility="invisible" />
+
+                <TextView
+                android:layout_width="2dp"
+                android:layout_height="35dp"
+                android:background="@drawable/rectangulito"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/tvDedOcupantes"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/paddingGeneral"
+                    android:layout_marginRight="@dimen/paddinDerecho"
+                    android:layout_weight="1"
+                    android:text="@string/deducible_sin_deducible"
+                    android:visibility="invisible" />
+
+                <TextView
+                android:layout_width="2dp"
+                android:layout_height="35dp"
+                android:background="@drawable/rectangulito"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/tvPrimOcupantes"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/paddingGeneral"
+                    android:layout_marginRight="@dimen/paddinDerecho"
+                    android:layout_weight="1"
+                    android:text="0.0"
+                    android:visibility="invisible" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#FBFBFB" >
+
+                <TextView
+                    android:id="@+id/textView50"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginRight="@dimen/paddinDerecho"
+                    android:layout_weight="2"
+                    android:text="@string/cobertura_gastos_medicos" />
+
+                <TextView
+                android:layout_width="2dp"
+                android:layout_height="35dp"
+                android:background="@drawable/rectangulito"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <Spinner
+                    android:id="@+id/spGastosMedOcu"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"                    
+                    android:layout_weight="1" />
+
+                <TextView
+                android:layout_width="2dp"
+                android:layout_height="35dp"
+                android:background="@drawable/rectangulito"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/tvDedGastosMedOc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/paddingGeneral"
+                    android:layout_marginRight="@dimen/paddinDerecho"
+                    android:layout_weight="1"
+                    android:text="@string/deducible_sin_deducible" />
+
+                <TextView
+                android:layout_width="2dp"
+                android:layout_height="35dp"
+                android:background="@drawable/rectangulito"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/tvPrimGastosMedicos"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/paddingGeneral"
+                    android:layout_marginRight="@dimen/paddinDerecho"
+                    android:layout_weight="1"
+                    android:text="0.0" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#EFEFEF" >
+                
+                <TextView
+                    android:id="@+id/textView46"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginRight="@dimen/paddinDerecho"
+                    android:layout_weight="2"
+                    android:text="@string/cobertura_muerte_conductor" />
+
+                <TextView
+                android:layout_width="2dp"
+                android:layout_height="35dp"
+                android:background="@drawable/rectangulito"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <Spinner
+                    android:id="@+id/spMuerteCond"
+                    android:layout_width="0dp"
+                    android:layout_marginLeft="1dp"                    
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                android:layout_width="2dp"
+                android:layout_height="35dp"
+                android:background="@drawable/rectangulito"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/tvDedMuerteCond"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/paddingGeneral"
+                    android:layout_marginRight="@dimen/paddinDerecho"
+                    android:layout_weight="1"
+                    android:text="@string/deducible_sin_deducible" />
+
+                <TextView
+                android:layout_width="2dp"
+                android:layout_height="35dp"
+                android:background="@drawable/rectangulito"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/tvPrimMuerteCond"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/paddingGeneral"
+                    android:layout_marginRight="@dimen/paddinDerecho"
+                    android:layout_weight="1"
+                    android:text="0.0" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#FBFBFB" >
+
+                <TextView
+                    android:id="@+id/textView57"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="@dimen/paddinDerecho"
+                    android:layout_weight="2"
+                    android:text="@string/cobertura_gastos_legales" />
+
+                <TextView
+                android:layout_width="2dp"
+                android:layout_height="35dp"
+                android:background="@drawable/rectangulito"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/tvSumGastosLegales"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="@dimen/paddinDerecho"
+                    android:layout_weight="1"
+                    android:text="@string/suma_asegurada_amparado" />
+
+                <TextView
+                android:layout_width="2dp"
+                android:layout_height="35dp"
+                android:background="@drawable/rectangulito"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/tvDedGastosLegales"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/paddingGeneral"
+                    android:layout_marginRight="@dimen/paddinDerecho"
+                    android:layout_weight="1"
+                    android:text="@string/deducible_sin_deducible" />
+
+                <TextView
+                android:layout_width="2dp"
+                android:layout_height="35dp"
+                android:background="@drawable/rectangulito"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/tvPrimGasLeg"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/paddingGeneral"
+                    android:layout_marginRight="@dimen/paddinDerecho"
+                    android:layout_weight="1"
+                    android:text="0.0" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#EFEFEF" >
+
+                <CheckBox
+                    android:id="@+id/checkBox6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="@string/cobertura_asistencia_vial"
+                    android:textSize="14dp"    
+                    
+                    />
+
+                <TextView
+                android:layout_width="2dp"
+                android:layout_height="35dp"
+                android:background="@drawable/rectangulito"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/tvSumAsistenciaVial"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/paddingGeneral"
+                    android:layout_marginRight="@dimen/paddinDerecho"
+                    android:layout_weight="1"
+                    android:text="@string/suma_asegurada_amparado"
+                    android:visibility="invisible" />
+
+                <TextView
+                android:layout_width="2dp"
+                android:layout_height="35dp"
+                android:background="@drawable/rectangulito"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/tvDedAsistenciaVial"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/paddingGeneral"
+                    android:layout_marginRight="@dimen/paddinDerecho"
+                    android:layout_weight="1"
+                    android:text="@string/deducible_sin_deducible"
+                    android:visibility="invisible" />
+
+                <TextView
+                android:layout_width="2dp"
+                android:layout_height="35dp"
+                android:background="@drawable/rectangulito"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/tvPrimAsisVial"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/paddingGeneral"
+                    android:layout_marginRight="@dimen/paddinDerecho"
+                    android:layout_weight="1"
+                    android:text="0.0"
+                    android:visibility="invisible" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#FBFBFB" >
+
+                <CheckBox
+                    android:id="@+id/checkBox7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="@string/cobertura_extension_cobertura"
+                    android:textSize="14dp"    
+                    
+                    />
+
+                <TextView
+                android:layout_width="2dp"
+                android:layout_height="35dp"
+                android:background="@drawable/rectangulito"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/tvSumExtCob"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/paddingGeneral"
+                    android:layout_marginRight="@dimen/paddinDerecho"
+                    android:layout_weight="1"
+                    android:text="@string/suma_asegurada_amparado"
+                    android:visibility="invisible" />
+
+                <TextView
+                android:layout_width="2dp"
+                android:layout_height="35dp"
+                android:background="@drawable/rectangulito"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/tvDedExtCob"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/paddingGeneral"
+                    android:layout_marginRight="@dimen/paddinDerecho"
+                    android:layout_weight="1"
+                    android:text="@string/deducible_sin_deducible"
+                    android:visibility="invisible" />
+
+                <TextView
+                android:layout_width="2dp"
+                android:layout_height="35dp"
+                android:background="@drawable/rectangulito"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/tvPrimExtCob"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/paddingGeneral"
+                    android:layout_marginRight="@dimen/paddinDerecho"
+                    android:layout_weight="1"
+                    android:text="0.0"
+                    android:visibility="invisible" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#EFEFEF" >
+
+   
+                <CheckBox
+                    android:id="@+id/checkBox2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="@string/cobertura_gastos_transporte"
+	                android:textSize="14dp"    
+                    />
+
+                <TextView
+                android:layout_width="2dp"
+                android:layout_height="35dp"
+                android:background="@drawable/rectangulito"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/tvSumGastosTrans"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/paddingGeneral"
+                    android:layout_marginRight="@dimen/paddinDerecho"
+                    android:layout_weight="1"
+                    android:text="@string/suma_asegurada_amparado"
+                    android:visibility="invisible" />
+
+                <TextView
+                android:layout_width="2dp"
+                android:layout_height="35dp"
+                android:background="@drawable/rectangulito"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/tvDedGastosTrans"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/paddingGeneral"
+                    android:layout_marginRight="@dimen/paddinDerecho"
+                    android:layout_weight="1"
+                    android:text="@string/deducible_sin_deducible"
+                    android:visibility="invisible" />
+
+                <TextView
+                android:layout_width="2dp"
+                android:layout_height="35dp"
+                android:background="@drawable/rectangulito"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/tvPrimGasTrans"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/paddingGeneral"
+                    android:layout_marginRight="@dimen/paddinDerecho"
+                    android:layout_weight="1"
+                    android:text="0.0"
+                    android:visibility="invisible" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#FBFBFB" >
+
+                <CheckBox
+                    android:id="@+id/checkBox3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="@string/cobertura_robo_parcial"
+                    	                android:textSize="14dp"    
+                    
+                     />
+                <TextView
+                android:layout_width="2dp"
+                android:layout_height="35dp"
+                android:background="@drawable/rectangulito"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/tvSumRoboParcial"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/paddingGeneral"
+                    android:layout_marginRight="@dimen/paddinDerecho"
+                    android:layout_weight="1"
+                    android:text="12000"
+                    android:visibility="invisible" />
+
+                <TextView
+                android:layout_width="2dp"
+                android:layout_height="35dp"
+                android:background="@drawable/rectangulito"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/tvDedRoboParc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/paddingGeneral"
+                    android:layout_marginRight="@dimen/paddinDerecho"
+                    android:layout_weight="1"
+                    android:text="25%"
+                    android:visibility="invisible" />
+
+                <TextView
+                android:layout_width="2dp"
+                android:layout_height="35dp"
+                android:background="@drawable/rectangulito"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/tvPrimRoboParcial"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/paddingGeneral"
+                    android:layout_marginRight="@dimen/paddinDerecho"
+                    android:layout_weight="1"
+                    android:text="0.0"
+                    android:visibility="invisible" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#EFEFEF" >
+
+   
+                <CheckBox
+                    android:id="@+id/checkBox5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="@string/cobertura_equipo_especial"
+	                android:textSize="14dp"    
+                     />
+
+                <TextView
+                android:layout_width="2dp"
+                android:layout_height="35dp"
+                android:background="@drawable/rectangulito"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    <EditText
+                        android:id="@+id/etSumEqEsp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="number"
+                        android:visibility="invisible" >
+                        
+                    </EditText>
+
+                   <!--  <Button
+                        android:id="@+id/btnSumEqEsp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Button" /> -->
+                </LinearLayout>
+
+                <TextView
+                android:layout_width="2dp"
+                android:layout_height="35dp"
+                android:background="@drawable/rectangulito"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+                
+                <TextView
+                    android:id="@+id/tvDedEquipoEsp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/paddingGeneral"
+                    android:layout_marginRight="@dimen/paddinDerecho"
+                    android:layout_weight="1"
+                    android:text="25%"
+                    android:visibility="invisible" />
+
+                <TextView
+                android:layout_width="2dp"
+                android:layout_height="35dp"
+                android:background="@drawable/rectangulito"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/tvPrimEquipoEsc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/paddingGeneral"
+                    android:layout_marginRight="@dimen/paddinDerecho"
+                    android:layout_weight="1"
+                    android:text="0.00"
+                    android:visibility="invisible" />
+
+            </TableRow>
+
+        </TableLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="17"
+        android:background="@color/grisFoot"
+        android:orientation="horizontal"
+        android:padding="@dimen/paddingGeneral" >
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:src="@drawable/logo_auto_vw" />
+
+        <TableLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="77.87" >
+
+            <TableRow
+                android:id="@+id/tableRow25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/textView18"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        style="@style/texto_morado"
+                        android:text="Prima Neta..........................." />
+
+                    <TextView
+                        style="@style/texto_morado"
+                        android:id="@+id/tvPrimaNeta"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textAlignment="viewEnd"
+                        android:text=".................................0"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        style="@style/texto_morado"                        
+                        android:id="@+id/textView20"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Subtotal................................." />
+
+                    <TextView
+                        style="@style/texto_morado"                        
+                        android:id="@+id/tvSubtotal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        
+                        android:text=".................................0"/>
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        style="@style/texto_morado"                        
+                        android:id="@+id/textView22"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Recargo de Pago Fraccionado" />
+
+                    <TextView
+                        style="@style/texto_morado"                        
+                        android:id="@+id/tvRecaFracc"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textAlignment="viewEnd"                        
+                        android:text=".................................0"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        style="@style/texto_morado"                        
+                        android:id="@+id/textView24"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="iva 16%................................." />
+
+                    <TextView
+                        style="@style/texto_morado"                        
+                        android:id="@+id/tvIva"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text=".................................0"/>
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        style="@style/texto_morado"                        
+                        android:id="@+id/textView26"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Derecho de Póliza................................." />
+
+                    <TextView
+                        style="@style/texto_morado"                        
+                        android:id="@+id/tvDerPoliza"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="right"
+                        android:text=".................................0" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        style="@style/texto_morado"                        
+                        android:id="@+id/textView28"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Total................................." />
+
+                    <TextView
+                        style="@style/texto_morado"                       
+                        android:id="@+id/tvTotal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text=".................................0"/>
+                </LinearLayout>
+
+            </TableRow>
+
+        </TableLayout>
+    </LinearLayout>
+
+</LinearLayout>

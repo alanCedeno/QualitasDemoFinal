@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/barraInicio"
+        android:showAsAction="always"
+        android:title="Carros"/>    
+	<item
+        android:id="@+id/tarifa"
+        android:showAsAction="always"
+        android:title="Pik ups"/>
+	
+	<item
+        android:id="@+id/menu"
+        android:showAsAction="always"
+        android:title="Menu"/>
+	
+</menu>
